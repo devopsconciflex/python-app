@@ -22,4 +22,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: nogueiraf/python-app:${{ github.sha::6 }}
+          tags: nogueiraf/python-app:${{ github.sha::4 }}
