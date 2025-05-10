@@ -11,7 +11,7 @@ def details():
         {
             'time': datetime.datetime.now().strftime("%I:%M:%S%p  on %B %d, %Y"),
             'hostname': socket.gethostname(),
-            'message' : "Build and pushed through Git Actions -- cert-manager"
+            'message' : "Build and pushed through Git Actions -- cert-manager",
             'deployed_on': "kubernetes"
         }
     )
