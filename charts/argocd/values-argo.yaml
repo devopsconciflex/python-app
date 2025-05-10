@@ -4,9 +4,6 @@ redis-ha:
 controller:
   replicas: 1
 
-server:
-  replicas: 1
-
 repoServer:
   replicas: 1
 
@@ -15,15 +12,16 @@ applicationSet:
 
 
 global:
-  domain: argocd.test.com
+  domain: argocd.k8s.conciflex.com.br
 
 certificate:
   enabled: true
 
 server:
+  replicas: 1
   ingress:
     annotations: 
       nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
     enabled: true
-    ingressClassName: nginx
+    ingressClassName: traefik
     tls: true

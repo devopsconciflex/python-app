@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: python-app
-        image: nogueiraf/python-app:v2
+        image: conciflex/python-app:1069ec
         ports:
         - containerPort: 5000
